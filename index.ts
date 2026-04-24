@@ -56,7 +56,7 @@ export type ProxyToWranglerProps = {
 export default function proxytowrangler(
 	props: ProxyToWranglerProps,
 ): FrameMasterPlugin {
-	const { wranglerPort = 8787, proxyRoutes, wranglerCommand = [] } = props;
+	const { wranglerPort = 8787, proxyRoutes, wranglerCommand } = props;
 	return {
 		name,
 		version,
